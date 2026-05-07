@@ -6,7 +6,7 @@
 
         <classes>
 
-<!-- <class name="tests.NotesTest"/> -->            
+<class name="tests.NotesTest"/>           
 <class name="tests.LoginTest"/>
 
         </classes>

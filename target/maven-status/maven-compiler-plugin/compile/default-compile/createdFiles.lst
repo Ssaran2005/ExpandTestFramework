@@ -1,7 +1,9 @@
 base\BasePage.class
 base\DriverFactory.class
 pages\LoginPage.class
+pages\NotesLoginPage.class
 utils\ConfigReader.class
+pages\NotesDashboardPage.class
 utils\ScreenshotUtil.class
 pages\NotesPage.class
 utils\ExtentManager.class

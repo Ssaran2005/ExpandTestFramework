@@ -3,7 +3,7 @@ package base;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
+import java.time.Duration;
 import utils.ConfigReader;
 
 public class BaseTest {
@@ -13,12 +13,18 @@ public class BaseTest {
     ConfigReader configReader = new ConfigReader();
 
     @BeforeMethod
-    public void setup() {
+public void setup() {
 
-        driver = DriverFactory.initializeDriver();
+    driver = DriverFactory.initializeDriver();
 
-        driver.get(configReader.getBaseUrl());
-    }
+    driver.manage().timeouts().implicitlyWait(
+            Duration.ofSeconds(5));
+
+    driver.manage().timeouts().pageLoadTimeout(
+            Duration.ofSeconds(20));
+
+   
+}
 
     @AfterMethod
     public void tearDown() {
