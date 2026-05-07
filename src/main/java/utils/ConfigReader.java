@@ -39,3 +39,4 @@ public class ConfigReader {
 
         return properties.getProperty("timeout");
     }
+}
