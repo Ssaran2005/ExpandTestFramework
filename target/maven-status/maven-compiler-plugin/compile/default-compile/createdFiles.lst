@@ -1,2 +1,4 @@
+base\BasePage.class
 utils\ConfigReader.class
 base\DriverFactory.class
+pages\LoginPage.class
