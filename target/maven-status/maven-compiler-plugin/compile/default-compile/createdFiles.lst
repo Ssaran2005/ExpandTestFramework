@@ -1,5 +1,8 @@
 base\BasePage.class
-utils\ConfigReader.class
 base\DriverFactory.class
 pages\LoginPage.class
+utils\ConfigReader.class
+utils\ScreenshotUtil.class
+pages\NotesPage.class
+utils\ExtentManager.class
 utils\WaitUtils.class

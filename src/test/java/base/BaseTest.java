@@ -8,7 +8,7 @@ import utils.ConfigReader;
 
 public class BaseTest {
 
-    public WebDriver driver;
+    public static WebDriver driver;
 
     ConfigReader configReader = new ConfigReader();
 
