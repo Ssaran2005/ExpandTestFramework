@@ -1,4 +1,5 @@
 base\BaseTest.class
+tests\FormsTest.class
 tests\LoginTest.class
 dataproviders\LoginDataProvider.class
 listeners\TestListener.class
