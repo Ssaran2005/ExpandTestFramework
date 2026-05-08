@@ -1,11 +1,12 @@
-base\BasePage.class
-base\DriverFactory.class
 pages\LoginPage.class
-pages\NotesLoginPage.class
-pages\FormsPage.class
 utils\ConfigReader.class
 pages\NotesDashboardPage.class
+pages\AlertsPage.class
+utils\WaitUtils.class
+base\BasePage.class
+base\DriverFactory.class
+pages\NotesLoginPage.class
+pages\FormsPage.class
 utils\ScreenshotUtil.class
 pages\NotesPage.class
 utils\ExtentManager.class
-utils\WaitUtils.class

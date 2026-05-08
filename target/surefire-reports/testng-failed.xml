@@ -3,13 +3,21 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="tests.FormsTest">
+      <class name="tests.AlertsTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="formInteractionTest"/>
+          <include name="alertsAutomationTest"/>
         </methods>
-      </class> <!-- tests.FormsTest -->
+      </class> <!-- tests.AlertsTest -->
+      <class name="tests.ValidationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loginValidationTest"/>
+          <include name="registrationValidationTest"/>
+        </methods>
+      </class> <!-- tests.ValidationTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

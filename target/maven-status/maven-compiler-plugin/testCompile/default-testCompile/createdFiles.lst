@@ -1,6 +1,8 @@
 base\BaseTest.class
 tests\FormsTest.class
-tests\LoginTest.class
+tests\ValidationTest.class
 dataproviders\LoginDataProvider.class
 listeners\TestListener.class
 tests\NotesTest.class
+tests\LoginTest.class
+tests\AlertsTest.class
