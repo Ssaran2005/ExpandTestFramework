@@ -6,11 +6,22 @@
 
         <classes>
 
-<class name="tests.NotesTest"/>           
-<class name="tests.LoginTest"/>
-<class name="tests.FormsTest"/>
-<class name="tests.AlertsTest"/>
-<class name="tests.ValidationTest"/>
+<classes>
+
+
+    <class name="tests.LoginTest"/>
+
+    <class name="tests.NotesTest"/>
+
+    <class name="tests.FormsTest"/>
+
+
+
+    <class name="tests.AlertsTest"/>
+
+    <class name="tests.ValidationTest"/>
+
+</classes>
 
         </classes>
 
