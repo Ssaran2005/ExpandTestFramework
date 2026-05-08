@@ -16,16 +16,30 @@ public class FormsPage extends BasePage {
         this.driver = driver;
     }
 
-    By inputField =
-            By.name("input-number");
+    By usernameField =
+            By.id("username");
 
-    By button =
-            By.xpath("//button[contains(text(),'Display')]");
+    By passwordField =
+            By.id("password");
 
-    public void enterFormData(String value) {
+    By confirmPasswordField =
+            By.id("confirmPassword");
 
-        type(inputField, value);
+    By registerButton =
+            By.xpath("//button[contains(text(),'Register')]");
 
-        click(button);
+    public void registerUser(
+            String username,
+            String password,
+            String confirmPassword) {
+
+        type(usernameField, username);
+
+        type(passwordField, password);
+
+        type(confirmPasswordField,
+                confirmPassword);
+
+        click(registerButton);
     }
 }

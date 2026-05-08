@@ -13,27 +13,31 @@ import pages.FormsPage;
 
 public class FormsTest extends BaseTest {
 
-    @Test
+  @Test
 public void formInteractionTest() {
+
+    driver.get(
+    "https://practice.expandtesting.com/register");
+
+    FormsPage formsPage =
+            new FormsPage(driver);
+
+    formsPage.registerUser(
+            "saran123",
+            "Password123",
+            "Password123");
 
     try {
 
-        driver.get(
-        "https://practice.expandtesting.com/inputs");
+        Thread.sleep(5000);
 
-        FormsPage formsPage =
-                new FormsPage(driver);
-
-        formsPage.enterFormData("100");
-
-        System.out.println(
-                "Form Interaction Completed");
     }
 
     catch (Exception e) {
 
-        System.out.println(
-                "Forms module slow but implemented successfully");
     }
+
+    System.out.println(
+            "Complete Form Interaction Completed");
 }
 }
