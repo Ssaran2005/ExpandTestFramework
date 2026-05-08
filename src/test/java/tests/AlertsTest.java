@@ -10,7 +10,7 @@ import pages.AlertsPage;
 
 public class AlertsTest extends BaseTest {
 
-    @Test
+    @Test(priority = 4)
 public void alertsAutomationTest() {
 
     try {

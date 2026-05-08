@@ -9,7 +9,7 @@ import pages.LoginPage;
 
 public class ValidationTest extends BaseTest {
 
-    @Test
+    @Test(priority = 5)
 public void registrationValidationTest() {
 
     try {
@@ -36,7 +36,7 @@ public void registrationValidationTest() {
     }
 }
 
-@Test
+@Test(priority = 6)
 public void loginValidationTest() {
 
     try {

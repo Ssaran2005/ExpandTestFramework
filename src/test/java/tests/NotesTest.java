@@ -14,7 +14,7 @@ import pages.NotesLoginPage;
 
 public class NotesTest extends BaseTest {
 
-@Test
+@Test(priority = 2)
 public void createNoteTest() {
 
     try {

@@ -10,7 +10,7 @@ import org.testng.annotations.Listeners;
 @Listeners(TestListener.class)
 public class LoginTest extends BaseTest {
 
- @Test
+ @Test(priority = 1)
 public void formInteractionTest() {
 
     try {

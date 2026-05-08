@@ -13,7 +13,7 @@ import pages.FormsPage;
 
 public class FormsTest extends BaseTest {
 
-  @Test
+ @Test(priority = 3)
 public void formInteractionTest() {
 
     driver.get(
