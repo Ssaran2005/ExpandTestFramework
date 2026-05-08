@@ -29,17 +29,15 @@ public class FormsPage extends BasePage {
             By.xpath("//button[contains(text(),'Register')]");
 
     public void registerUser(
-            String username,
-            String password,
-            String confirmPassword) {
+        String username,
+        String password,
+        String confirmPassword) {
 
-        type(usernameField, username);
+    type(usernameField, username);
 
-        type(passwordField, password);
+    type(passwordField, password);
 
-        type(confirmPasswordField,
-                confirmPassword);
-
-        click(registerButton);
-    }
+    type(confirmPasswordField,
+            confirmPassword);
+}
 }

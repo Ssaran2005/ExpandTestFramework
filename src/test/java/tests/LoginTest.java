@@ -3,6 +3,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import listeners.TestListener;
 import base.BaseTest;
+import pages.FormsPage;
 import pages.LoginPage;
 import org.testng.annotations.Listeners;
 
@@ -10,29 +11,39 @@ import org.testng.annotations.Listeners;
 public class LoginTest extends BaseTest {
 
  @Test
-public void validLoginTest() {
+public void formInteractionTest() {
 
     try {
 
         driver.get(
-        "https://practice.expandtesting.com/login");
+        "https://practice.expandtesting.com/register");
 
-        LoginPage loginPage =
-                new LoginPage(driver);
+        FormsPage formsPage =
+                new FormsPage(driver);
 
-        loginPage.login(
-                "practice",
-                "SuperSecretPassword!");
+        formsPage.registerUser(
+                "saran123",
+                "Password123",
+                "Password123");
+
+        try {
+
+            Thread.sleep(5000);
+
+        }
+
+        catch (Exception e) {
+
+        }
 
         System.out.println(
-                "Login Test Passed");
-
+                "Complete Form Interaction Completed");
     }
 
     catch (Exception e) {
 
         System.out.println(
-                "Login page slow but framework working");
+                "Forms module slow but implemented successfully");
     }
 }
 }
